@@ -1,0 +1,119 @@
+/* General styles */
+
+body {
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p { 
+    margin: 0;
+}
+
+div {
+    display: inline-block;
+    background-color: white;
+    margin: 50px 25px;
+    /* width: 600px; */
+}
+
+input,
+button {
+    border-style: none;
+}
+
+
+
+/* Sign up form */
+/* .signup-box {
+    padding: 8px;
+} */
+
+.name-box,
+.surname-box,
+.email-box,
+.signup-btn {
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 8px 0px;
+}
+
+.name-box,
+.surname-box,
+.email-box  {
+    display: inline-block;
+    border: 1px solid rgb(200, 200, 200);;
+    padding-left: 12px;
+}
+
+.name-box {
+    margin-left: 12px;
+}
+
+.surname-box {
+    margin-right: 12px;
+}
+
+.email-box,
+.signup-btn
+ {
+    display: block;
+    margin-left: 12px;
+    margin-right: 12px;
+    
+}
+
+.email-box {
+    width: 88.5%;
+    margin-bottom: 8px;
+}
+
+.signup-btn {
+    color: white;
+    background-color: #3876E8;
+    width: 93%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+/* Request form styles */
+/* .request-box {
+    padding: 8px;
+} */
+
+.form-description {
+    font-size: 32px;
+    margin-left: 8px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    margin-right: 45px;
+}
+
+
+.pickup-input,
+.destination-input {
+    display: block;
+    background-color: rgb(240, 240, 240);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    margin-left: 8px;
+    margin-bottom: 6px;
+    width: 90%;
+}
+
+.request-btn,
+.schedule-btn {
+    padding: 14px 20px;
+}
+
+.request-btn {
+    background-color: black;
+    color: white;
+    margin-left: 8px;
+    margin-right: 6px;
+    margin-top: 20px;
+    margin-bottom: 14px;
+}

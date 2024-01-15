@@ -1,0 +1,93 @@
+/* General styles */
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  margin-bottom: 150px;
+}
+
+
+/* Shop banner */
+.shop-banner {
+  text-align: center;
+}
+
+.new {
+  color: orange;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.item-name {
+  font-weight: 550;
+  font-size: 26px;
+}
+
+.item-description {
+  font-weight: 600;
+  font-size: 44px;
+  margin-bottom: 8px;
+}
+
+.item-price {
+  color: rgb(97, 93, 93);
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  border-style: none;
+  background-color: rgb(29, 100, 254);
+  color: white;
+  border-radius: 14px;
+  padding: 6px 12px;
+}
+
+
+
+/* Stocks banner */
+.stock-price {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.stock-currency {
+  color: rgb(96, 96, 96);
+  font-size: 16px;
+}
+
+.currency-changes {
+  color: green;
+  margin-bottom: 6px;
+}
+
+.currency-hour-changes {
+  color: rgb(96, 96, 96);
+}
+
+.hour-persent-change {
+  color: rgb(211, 14, 14);
+}
+
+
+/* Twitter banner */
+.account-name {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.account-nickname {
+  color: rgb(96, 96, 96);
+  font-weight: 500;
+}
+
+.twit-text {
+  margin-bottom: 18px;
+  width: 500px;
+}
+
+.account-link {
+  color: rgb(76, 115, 169);
+}

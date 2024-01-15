@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 4</title>
+
+  <style>
+    /* General styles */
+    a {
+      margin-right: 10px;
+    }
+
+    div {
+      margin: 50px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+
+    /* Pagination */
+    .back-button,
+    .next-button {
+      padding: 8px 5px;
+      margin-right: 10px;
+    }
+
+    .number-button,
+    .stretch-button,
+    .shadow-button {
+      color: white;
+      background-color: green;
+      border-style: none;
+    }
+
+
+    /* Stretch button styles */
+    .stretch-button {
+      padding: 6px;
+      padding-bottom: 6px;
+      padding-left: 6px;
+      padding-right: 6px;
+      transition: padding 0.5s;
+    }
+
+    .stretch-button:hover {
+      padding: 16px;
+      padding-bottom: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+
+    /* Shadow button styles */
+    .shadow-button {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 6px;
+      padding-right: 6px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+      margin-bottom: 2px;
+      margin-right: 2px;
+    }
+
+    .shadow-button:active {
+      box-shadow: none;
+      margin-top: 2px;
+      margin-left: 2px;
+      margin-bottom: 0px;
+      margin-right: 0px;
+    }
+
+
+    /* Number button styles */
+    .number-button {
+      padding: 6px;
+      padding-bottom: 6px;
+      padding-left: 6px;
+      padding-right: 6px;
+      margin: 3px;
+      transition: margin 0.25s, padding 0.25s;
+    }
+
+    .number-button:hover {
+      margin: 0px;
+      padding-left:  9px;
+      padding-right: 9px;
+    }
+
+    .active-line {
+      transition: border-bottom 1s;
+    }
+
+    .active-line:hover {
+      border-bottom: 2px solid greenyellow;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 4h Pagination-->
+  <div>
+    <button class="back-button">Back</button>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <button class="next-button">Next</button>
+  </div>
+
+  <!-- 4i.Stretch -->
+  <div>
+    <button class="stretch-button">Stretch</button>
+  </div>
+
+  <!-- 4j.3D Click -->
+  <div>
+    <button class="shadow-button">Shadow</button>
+  </div>
+
+  <!-- 4k.Margin and padding together -->
+  <div>
+    <button class="number-button">One</button>
+    <button class="number-button">Two</button>
+    <button class="number-button">Three</button>
+  </div>
+
+</body>
+
+</html>
