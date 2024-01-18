@@ -51,8 +51,6 @@ p {
     width: 12px;
     height: 12px;
     object-fit: cover;
-    /* object-position: center; */
-    /* background-color: black; */
     border-radius: 6px;
 }
 
@@ -65,8 +63,6 @@ p {
 .friend-mutuals {
     font-size: 7px;
     color: rgb(96, 96, 96);
-    /* margin-left: 4px;
-    margin-bottom: 3px; */
 }
 
 /* Friend add */

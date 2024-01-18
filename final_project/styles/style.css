@@ -10,43 +10,38 @@ p {
     display: block;
 }
 
-/* Main box */
-.video-preview {
-    width: 300px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 15px;
+
+/* Main page view */
+.video-box-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
 }
+
+/* Main boxes */
 
 .preview-image {
     margin-bottom: 12px;
 }
 
 .thumbnail {
-    width: 300px;
+    width: 100%;
 }
 
 /* Preview info */
-.profile-picture-box,
-.video-info {
-    display: inline-block;
+.preview-info {
+    display: grid;
+    grid-template-columns: 50px 1fr;
 }
 
 /* Profile picture */
-.profile-picture-box {
-    vertical-align: top;
-}
-
 .profile-picture {
     width: 40px;
     border-radius: 50px;
 }
 
 /* Video info */
-.video-info {
-    width: 250px;
-}
-
 .video-title {
     font-weight: 500;
     font-size: 14px;
