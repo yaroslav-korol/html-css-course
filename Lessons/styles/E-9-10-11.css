@@ -1,0 +1,76 @@
+/* General styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: grey; */
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Main box Grid */
+.friend-box-grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 20px;
+}
+
+/* Main box */
+.friend-box {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    vertical-align: top;
+}
+
+/* Friend thumbnail */
+.friend-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 12px;
+}
+
+/* Friend info */
+/* Friend name info */
+.friend-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+
+/* Friend mutual box */
+.friend-mutual-grid {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    align-items: center;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+/* Main profile box */
+
+.main-profile-img {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* Friend nutual info */
+.friend-mutuals {
+    color: rgb(100, 100, 100);
+}
+
+/* Friend add */
+.friend-add-btn {
+    background-color: #2C5DB7;
+    color: white;
+    border-style: none;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
