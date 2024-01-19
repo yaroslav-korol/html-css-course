@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: #624894;
+}
+
+.left-section {
+    width: 100px;
+    margin-left: 22px;
+}
+
+.left-section p{
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.middle-section {
+    flex: 1;
+    max-width: 600px;
+}
+
+.search-bar {
+    font-size: 24;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-style: none;
+    /* flex: 1; */
+}
+
+.right-section {
+    width: 250px;
+    /* align-items: end; */
+}
+
+.download-btn {
+    color: white;
+    background-color: #624894;
+    border: solid white 1px;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px 22px;
+    font-size: 24px;
+}
