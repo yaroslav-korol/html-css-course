@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        /* Colors */
+        .clr-1 {
+            background-color: lightblue;
+        }
+
+        .clr-2 {
+            background-color: lightpink;
+        }
+
+        /* Flex box */
+        .flex-box-1 {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+
+        .flex-box-1 .cln-1 {
+            background-color: lightblue;
+            width: 200px;
+        }
+
+        .flex-box-1 .cln-2 {
+            background-color: lightpink;
+            width: 75px;
+        }
+
+        /* 2 */
+        .flex-box-2 {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+
+        .flex-box-2 .cln-1 {
+            width: 50px;
+        }
+
+        .flex-box-2 .cln-2 {
+            flex: 1;
+        }
+
+        .flex-box-2 .cln-3 {
+            width: 75px;
+        }
+
+        /* 3 */
+        .flex-box-3 {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            justify-content: space-between;
+        }
+
+        /* 4 */
+        .flex-box-4 {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            height: 50px;
+            border: solid gray 1px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-box-1">
+        <div class="clr-1 cln-1">200px</div>
+        <div class="clr-2 cln-2">75px</div>
+    </div>
+
+    <div class="flex-box-2">
+        <div class="clr-1 cln-1">item 1</div>
+        <div class="clr-2 cln-2">item 2</div>
+        <div class="clr-1 cln-3">item 3</div>
+    </div>
+
+    <div class="flex-box-3">
+        <div class="clr-2 cln-1">item 1</div>
+        <div class="clr-2 cln-2">item 2</div>
+        <div class="clr-2 cln-3">item 3</div>
+        <div class="clr-2 cln-4">item 4</div>
+    </div>
+
+    <div class="flex-box-4">
+        <div class="clr-2 cln-1">item 1</div>
+        <div class="clr-2 cln-2">item 2</div>
+    </div>
+</body>
+</html>
