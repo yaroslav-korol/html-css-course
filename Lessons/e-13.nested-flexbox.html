@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Flexbox</title>
+
+    <style>
+        /* Colors */
+        .bg-clr-1 {
+            background-color: lightpink;
+        }
+
+        .bg-clr-2 {
+            background-color: lightblue;
+        }
+
+        .main-color-set {
+            color: white;
+            background-color: black;
+        }
+
+        /* General */
+        .flex-container {
+            width: 300px;
+            height: 50px;
+            display: flex;
+            margin-bottom: 50px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        /* First box */
+        .nested-flexbox-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+
+        }
+
+        .box-1 {
+            flex: 1;
+        }
+
+        /* Second box */
+        .inner-box-1 {
+            width: 100px;
+        }
+
+        .inner-flexbox-1 {
+            flex: 1;
+        }
+
+        .third-lvl-flexbox {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="nested-flexbox-1 bg-clr-1">
+            <p class="main-color-set">item-1</p>
+        </div>
+        <div class="box-1 bg-clr-2"></div>
+    </div>
+
+    <div class="flex-container">
+        <div class="inner-box-1 bg-clr-1"></div>
+        <div class="inner-flexbox-1 bg-clr-2">
+            <p>row-1</p>
+            <div class="third-lvl-flexbox">
+                <p class="main-color-set">row-2</p>
+                <p class="main-color-set">row-2</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
