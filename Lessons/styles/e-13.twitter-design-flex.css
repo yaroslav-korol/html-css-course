@@ -1,0 +1,81 @@
+/* General */
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --main-color: rgb(111, 111, 111);
+    --debug-color: rgb(160, 198, 232);
+}
+
+.main-container {
+    display: flex;
+    /* background-color: var(--debug-color); */
+    padding: 8px 12px;
+    width: 420px;
+}
+
+/* Profile picture */
+.profile-picture-box {
+    margin-right: 10px;
+
+    .profile-picture {
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+    }
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* Tweet content */
+.tweet-content {
+    margin-bottom: 15px;
+
+    .tweet-author {
+        display: flex;
+
+        .tweet-author-name {
+            font-weight: 700;
+            margin-right: 5px;
+        }
+
+        .tweet-author-link {
+            color: var(--main-color);
+        }
+
+        .tweet-text {
+            line-height: 20px;
+        }
+    }
+}
+
+/* Tweet external content */
+.tweet-external-content {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 15px;
+    overflow: hidden;
+
+    .external-content-preview {
+        background-color: rgb(220, 220, 220);
+        width: 100px;
+        height: 100px;
+    }
+
+    .external-content-info {
+        flex: 1;
+        padding: 10px 5px;
+
+        .external-content-link {
+            color: var(--main-color);
+            margin-bottom: 3px;
+        }
+
+        .external-content-subject {
+            line-height: 22px;
+        }
+    }
+
+
+}
