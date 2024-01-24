@@ -1,0 +1,59 @@
+body {
+    height: 3000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* First sidebar */
+.images-sidebar {
+    background-color: rgb(30, 30, 30);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 10px 10px 0 10px;
+}
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: 70%;
+    margin-bottom: 10px;
+}
+
+/* Second sidebar */
+.chats-sidebar {
+    background-color: rgb(50, 50, 50);
+    position: fixed;
+    left: 70px;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    padding: 15px 15px 0 15px;
+}
+
+.chats-sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-section {
+    color: rgb(210, 210, 210);
+    font-size: 14px;
+}
+
+.add-btn {
+    font-size: 25px;
+}
+
+.add-btn,
+.chat-name {
+    color: rgb(150, 150, 150);
+}
+
+.chat-name {
+    margin-bottom: 16px;
+}

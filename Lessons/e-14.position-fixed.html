@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Fixed. Easy</title>
+
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .fixed-element {
+          background-color: black;
+          color: white;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+        }
+
+        .sidebar {
+          position: fixed;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          width: 100px;
+          background-color: green;
+        }
+
+        .entire-page {
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          /* background-color: white; */
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-element">
+        bottom-right
+    </div>
+
+    <div class="sidebar">
+      left-sidebar
+    </div>
+
+    <div class="entire-page"></div>
+</body>
+</html>
