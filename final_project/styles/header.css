@@ -9,6 +9,7 @@
     height: 56px;
     border-bottom: 1px solid rgb(204, 204, 204);
     background-color: white;
+    z-index: 100;
 }
 
 /* Icons size */
@@ -95,6 +96,22 @@
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
+}
+
+.notifications-box {
+    position: relative;
+}
+
+.notifications-count {
+    background-color: rgb(205, 0, 0);
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 14px;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    padding: 1px 5px;
 }
 
 .current-profile-picture {

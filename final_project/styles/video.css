@@ -8,12 +8,25 @@
 
 /* Main boxes */
 
-.preview-image {
+.preview-image-box {
     margin-bottom: 12px;
+    position: relative;
 }
 
 .thumbnail {
     width: 100%;
+}
+
+.video-length {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    padding: 4px;
+    border-radius: 2px;
 }
 
 /* Preview info */

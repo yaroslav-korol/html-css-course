@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 3000px;
+}
+
+.item-container {
+    background-color: rgb(205, 205, 205);
+    display: inline-block;
+    position: relative;
+}
+
+.item-img {
+    width: 300px;
+    margin: 25px;
+}
+
+.item-discount-banner {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 8px 12px;
+}
+
+.buy-block {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-btn {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 15px;
+}
