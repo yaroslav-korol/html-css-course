@@ -1,34 +1,79 @@
 /* General */
 .sidebar {
-    background-color: white;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    top: 56px;
-    width: 72px;
-    z-index: 200;
-    padding-top: 5px;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 56px;
+  z-index: 200;
+  padding-top: 5px;
 }
 
+/* Menu element */
 .sidebar-option-box {
+  display: flex;
+  cursor: pointer;
+
+  img {
+    height: 24px;
+  }
+}
+
+/* Sidebar design for smaller screens */
+@media (width < 1315px) {
+  /* General */
+  .sidebar {
+    width: 72px;
+  }
+
+  /* Menu element */
+  .sidebar-option-box {
     height: 74px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 
     img {
-        height: 24px;
-        margin-bottom: 4px;
+      margin-bottom: 4px;
     }
 
     div {
-        font-size: 10px;
+      font-size: 10px;
     }
-}
+  }
 
-.sidebar-option-box:hover {
+  .sidebar-option-box:hover {
     background-color: rgb(235, 235, 235);
     border-radius: 10px;
+  }
+}
+
+/* Sidebar design for bigger screens */
+@media (width >= 1315px) {
+  /* General */
+  .sidebar {
+    width: 216px;
+  }
+
+  /* Menu element */
+  .sidebar-option-box {
+    height: 40px;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 12px;
+    padding-left: 12px;
+
+    img {
+      margin-right: 24px;
+    }
+
+    div {
+      font-size: 14px;
+    }
+  }
+
+  .sidebar-option-box:hover {
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+  }
 }

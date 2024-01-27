@@ -1,10 +1,29 @@
 /* Main page view */
 .video-box-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     column-gap: 16px;
     row-gap: 40px;
 }
+
+/* Resize video box according to screen size*/
+/* @media (width < 750px) {
+    .video-box-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (750px < width < 1000px) {
+    .video-box-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (width > 1000px) {
+    .video-box-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+} */
 
 /* Main boxes */
 .preview-image-box {
@@ -14,6 +33,7 @@
 
 .thumbnail {
     width: 100%;
+    border-radius: 12px;
 }
 
 .video-length {
