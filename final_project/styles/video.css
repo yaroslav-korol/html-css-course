@@ -2,14 +2,13 @@
 .video-box-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
+    column-gap: 16px;
     row-gap: 40px;
 }
 
 /* Main boxes */
-
 .preview-image-box {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     position: relative;
 }
 
@@ -37,7 +36,7 @@
 
 /* Profile picture */
 .profile-picture {
-    width: 40px;
+    width: 36px;
     border-radius: 50px;
 }
 
@@ -46,16 +45,25 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+}
+
+.video-link {
+    color: black;
 }
 
 .video-stats,
-.video-author 
+.video-author-link 
 {
     font-size: 12px;
     color: rgb(96, 96, 96);
 }
 
-.video-author {
+.video-link,
+.video-author-link {
+    text-decoration: none;
+}
+
+.video-author-name {
     margin-bottom: 4px;
 }
