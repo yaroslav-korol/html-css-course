@@ -58,7 +58,7 @@
 }
 
 /* Middle section */
-.middle-section {
+.middle-section-show {
     flex: 1;
     margin-left: 70px;
     margin-right: 35px;
@@ -104,6 +104,11 @@
     border: none;
 }
 
+.middle-section-hide {
+    display: none;
+}
+
+/* Tooltips */
 .tooltip-box {
     display: flex;
     justify-content: center;
@@ -111,7 +116,6 @@
     position: relative;
 }
 
-/* Tooltips */
 .tooltip {
     background-color: gray;
     color: white;

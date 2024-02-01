@@ -1,7 +1,7 @@
 // Constants
 const COMPACT_WIDTH = '96px';
 const WIDE_WIDTH = '240px';
-const SMALL_SCREEN_WIDTH = 525;
+const SMALL_SCREEN_WIDTH = 590;
 
 // Ensure the entire page is loaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const body = document.querySelector('body');
   const menuButton = document.querySelector('.menu-icon');
   const sidebar = document.querySelector('.sidebar');
+  const middleSection = document.querySelector('header.header div.middle-section');
 
   // Menu button actions on click
   menuButton.onclick = () => {
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hide sidebar if it's compact
     if (window.innerWidth <= SMALL_SCREEN_WIDTH && body.style.paddingLeft === COMPACT_WIDTH) {
       sidebar.classList.replace('sidebar-compact', 'sidebar-hide');
-      body.style.paddingLeft = '0';
+      body.style.paddingLeft = '24px';
     }
     // Switch the sidebar on compact if i'st hidden.
     else if (window.innerWidth <= SMALL_SCREEN_WIDTH) {
@@ -42,19 +43,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Small screen width. Hide sidebar if it's compact
     if (width <= SMALL_SCREEN_WIDTH) {
-      body.style.paddingLeft = '0';
+      body.style.paddingLeft = '24px';
       sidebar.classList.replace('sidebar-compact', 'sidebar-hide');
-    
-    // Switch the sidebar on wide if screen width is large
+      // Show middle section of the header
+      middleSection.classList.replace('middle-section-show', 'middle-section-hide');
+
+      // Switch the sidebar on wide if screen width is large
     } else if (width > 1315) {
-        body.style.paddingLeft = WIDE_WIDTH;
-        sidebar.classList.replace('sidebar-compact', 'sidebar-wide');
-    
-    // Switch the sidebar on compact from hidden/wide if screen width is average
+      body.style.paddingLeft = WIDE_WIDTH;
+      sidebar.classList.replace('sidebar-compact', 'sidebar-wide');
+
+      // Switch the sidebar on compact from hidden/wide if screen width is average
     } else {
       body.style.paddingLeft = COMPACT_WIDTH;
       sidebar.classList.remove('sidebar-hide', 'sidebar-wide');
       sidebar.classList.add('sidebar-compact');
+      // Show middle section of the header
+      middleSection.classList.replace('middle-section-hide', 'middle-section-show');
     }
   }
 
