@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger menu</title>
+<style>
+    /* Test Hamburger menu */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+  
+  .hamburger {
+    font-size: 34px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 15px;
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      width: 100%;
+      background-color: #f8f8f8;
+      z-index: 1;
+    }
+  
+    .menu a {
+      border-bottom: 1px solid #ddd;
+    }
+  
+    #menu-toggle:checked + .hamburger + .menu {
+      display: flex;
+    }
+  }
+
+</style>
+</head>
+<body>
+    <!-- Test hamburger menu -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <div class="menu">
+    <!-- Your menu items go here -->
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    </div>
+</body>
+</html>

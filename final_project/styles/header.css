@@ -39,8 +39,23 @@
 
 .menu-icon {
     margin: 0 24px;
+    transition: all 0.3s ease;
 }
 
+/* Click menu button animation */
+.menu-icon:hover {
+    background-color: rgb(229, 229, 229);
+    border-radius: 18px;
+    padding: 6px 6px;
+    margin: 0 18px;
+}
+
+.menu-icon:active {
+    background-color: rgb(204, 204, 204);
+    border-radius: 20px;
+    padding: 8px 8px;
+    margin: 0 16px;
+}
 
 /* Middle section */
 .middle-section {

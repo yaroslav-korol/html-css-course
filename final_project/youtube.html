@@ -23,35 +23,41 @@
   <link rel="stylesheet" href="styles/sidebar.css">
   <link rel="stylesheet" href="styles/video.css">
 
+  <script src="scripts/script.js"></script>
+
 </head>
 
 <body>
   <!-- Header -->
   <header class="header">
     <div class="left-section">
-      <img src="images/icons/hamburger-menu.svg" alt="hamburger-menu" class="menu-icon">
+
+      <label for="sidebar-toggler">
+        <img class="menu-icon" src="images/icons/hamburger-menu.svg" alt="hamburger-menu">
+      </label>
+
       <a href="https://www.youtube.com/">
-        <img src="images/icons/youtube-logo.svg" alt="youtube-logo" class="youtube-logo">
+        <img class="youtube-logo" src="images/icons/youtube-logo.svg" alt="youtube-logo">
       </a>
     </div>
     <div class="middle-section">
       <input type="text" placeholder="Search" class="search-bar">
       <button class="search-btn tooltip-box">
-        <img src="images/icons/search.svg" alt="search button" class="search-icon">
+        <img class="search-icon" src="images/icons/search.svg" alt="search button">
         <span class="tooltip">Search</span>
       </button>
       <button class="voice-search-btn tooltip-box">
-        <img src="images/icons/voice-search-icon.svg" alt="voice search button" class="voice-search-icon">
+        <img class="voice-search-icon" src="images/icons/voice-search-icon.svg" alt="voice search button">
         <span class="tooltip">Search with your voice</span>
       </button>
     </div>
     <div class="right-section">
       <div class="tooltip-box">
-        <img src="images/icons/upload.svg" alt="upload button" class="upload-icon">
+        <img class="upload-icon" src="images/icons/upload.svg" alt="upload button">
         <div class="tooltip">Create</div>
       </div>
       <div class="tooltip-box">
-        <img src="images/icons/youtube-apps.svg" alt="youtube apps menu button" class="apps-menu-icon">
+        <img class="apps-menu-icon" src="images/icons/youtube-apps.svg" alt="youtube apps menu button">
         <div class="tooltip">YouTube apps</div>
       </div>
       <div class="notifications-box tooltip-box">
@@ -64,7 +70,8 @@
   </header>
 
   <!-- Sidebar -->
-  <nav class="sidebar">
+  <input type="checkbox" id="sidebar-toggler">
+  <nav class="sidebar sidebar-compact">
     <a href="https://www.youtube.com/">
       <div class="sidebar-option-box">
         <img src="images/icons/youtube-home.svg" alt="home button">
@@ -723,7 +730,6 @@
 
     </section>
   </main>
-
 </body>
 
 </html>
